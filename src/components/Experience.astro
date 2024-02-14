@@ -1,0 +1,23 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Julio 2021",
+    title: "Desarrollo de sitio web",
+    company: "AM Agrimensura",
+    description:
+      "Mi tarea fue recrear el diseño original de la empresa que se encontraba en el sitio Wix.com utilizando las tecnologías HTML5, CSS3 y JavaScript",
+    link: "https://www.amagrimensura.com.ar/",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

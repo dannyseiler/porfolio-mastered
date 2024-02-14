@@ -1,0 +1,47 @@
+---
+const personalImageAlt = "Daniel Seiler";
+---
+
+<article
+  class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"
+>
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+  >
+    <p>
+      Comenzé a aprender Desarrollo Web gracias a que un amigo me lo recomendó,
+      y ahí inicié este camino. <strong>
+        Encontré en la programación mi pasión, y se ha convertido en lo que quiero dedicarme profesionalmente.</strong
+      >
+    </p>
+
+    <p>
+      Uno de mis proyectos personales, <strong
+        ><a
+          href="https://aceptomascotas.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer">Acepto Mascotas</a
+        ></strong
+      >, combina mi pasión por la programación, los animales y una necesidad que
+      tuve que solucionar el cual vi la oportunidad para poder ayudar a mucha
+      más gente a encontrar su próximo hogar sin tener que verse obligados a
+      abandonar a sus mascotas.
+    </p>
+    <p>
+      Mi objetivo es seguir creciendo como Desarrollador Web, seguir aprendiendo
+      para convertirme en FullStack y <strong
+        >poder aportar valor en el área de Frontend Web a un equipo de trabajo
+        con mis conocimientos, mis ideas y mis ganas de progresar.</strong
+      >
+    </p>
+  </div>
+
+  <img
+    width="200"
+    height="200"
+    src="/profile2.jpg"
+    alt={personalImageAlt}
+    class="order-1 object-cover w-64 h-full p-1 bg-white md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl dark:bg-yellow-500/5 ring-1 ring-white/20"
+    style="object-position: 50% 50%"
+  />
+</article>
