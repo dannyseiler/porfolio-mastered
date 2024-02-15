@@ -4,6 +4,7 @@ import HTML from "./icons/HTML.astro";
 import CSS from "./icons/CSS.astro";
 import JAVASCRIPT from "./icons/Javascript.astro";
 import ANGULAR from "./icons/Angular.astro";
+import TYPESCRIPT from "./icons/Typescript.astro";
 import ASTRO from "./icons/AstroIcon.astro";
 import TAILWIND from "./icons/Tailwind.astro";
 import LinkButton from "./LinkButton.astro";
@@ -29,6 +30,11 @@ const TAGS = {
     name: "Angular",
     class: "bg-[#F20755] text-white",
     icon: ANGULAR,
+  },
+  TYPESCRIPT: {
+    name: "Typescript",
+    class: "bg-[#3178C6] text-white",
+    icon: TYPESCRIPT,
   },
   ASTRO: {
     name: "Astro",
@@ -68,6 +74,15 @@ const PROJECTS = [
     github: "https://github.com/dannyseiler/porfolio-mastered",
     image: "/projects/porfolio.png",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.ASTRO, TAGS.TAILWIND],
+  },
+  {
+    title: "Todo App ",
+    description:
+      "App de Tareas realizada con Angular y Typescript el cual se preservan las tareas mismas en el localStorage.",
+    link: "https://todominimalist.netlify.app/",
+    github: "https://github.com/dannyseiler/ng-todoapp",
+    image: "/projects/todoapp.png",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.TYPESCRIPT, TAGS.ANGULAR],
   },
 ];
 ---
