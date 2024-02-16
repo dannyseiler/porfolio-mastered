@@ -2,6 +2,7 @@
 import GitHub from "./icons/GitHub.astro";
 import HTML from "./icons/HTML.astro";
 import CSS from "./icons/CSS.astro";
+import BOOTSTRAP from "./icons/Bootstrap.astro";
 import JAVASCRIPT from "./icons/Javascript.astro";
 import ANGULAR from "./icons/Angular.astro";
 import TYPESCRIPT from "./icons/Typescript.astro";
@@ -18,8 +19,13 @@ const TAGS = {
   },
   CSS: {
     name: "CSS",
-    class: "bg-[#0c73b8] text-white",
+    class: "bg-[#6495ED] text-white",
     icon: CSS,
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-[#483D8B] text-white",
+    icon: BOOTSTRAP,
   },
   JAVASCRIPT: {
     name: "JavaScript",
@@ -64,16 +70,7 @@ const PROJECTS = [
     link: "https://aceptomascotas.vercel.app/",
     github: "https://github.com/dannyseiler/aceptomascotas",
     image: "/projects/aceptomascotas.png",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
-  },
-  {
-    title: "Porfolio ",
-    description:
-      "Recientemente he actualizado mi porfolio agregando nuevas tecnologías web que estoy aprendiendo.",
-    link: "https://daniseiler.netlify.app/",
-    github: "https://github.com/dannyseiler/porfolio-mastered",
-    image: "/projects/porfolio.png",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.ASTRO, TAGS.TAILWIND],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.BOOTSTRAP, TAGS.JAVASCRIPT],
   },
   {
     title: "Todo App ",
@@ -82,6 +79,15 @@ const PROJECTS = [
     link: "https://todominimalist.netlify.app/",
     github: "https://github.com/dannyseiler/ng-todoapp",
     image: "/projects/todoapp.png",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.TYPESCRIPT, TAGS.ANGULAR],
+  },
+  {
+    title: "Pokemon Interceptor",
+    description:
+      "Consumo de API REST con manejo de errores e interceptors",
+    link: "",
+    github: "https://github.com/dannyseiler/pokeapi-interceptors",
+    image: "/projects/pokeinterceptor.png",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.TYPESCRIPT, TAGS.ANGULAR],
   },
 ];
